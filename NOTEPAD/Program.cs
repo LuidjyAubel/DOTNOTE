@@ -8,6 +8,7 @@ namespace NOTEPAD
 {
     internal static class Program
     {
+        static public Main MainForm;
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
@@ -16,7 +17,9 @@ namespace NOTEPAD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+             MainForm = new Main();
+            //Application.Run(new Main());
+            Application.Run(MainForm);
         }
     }
 }

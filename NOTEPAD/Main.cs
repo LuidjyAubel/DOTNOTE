@@ -30,6 +30,7 @@ namespace NOTEPAD
                 richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
             }
             this.FileName = openFileDialog1.FileName;
+            
         }
 
         private void fichierToolStripMenuItem_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace NOTEPAD
                 richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
             }
             this.FileName = openFileDialog1.FileName;
+            Program.MainForm.Text += " | "+openFileDialog1.FileName;
         }
 
         private void enregistreSousToolStripMenuItem_Click(object sender, EventArgs e)
@@ -53,6 +55,7 @@ namespace NOTEPAD
                 richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
             }
             this.FileName = openFileDialog1.FileName;
+            Program.MainForm.Text += " | " + openFileDialog1.FileName;
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,14 +129,7 @@ namespace NOTEPAD
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (richTextBox1.Text == "")
-            {
                 this.Close();
-            }
-            else
-            {
-                this.Close();
-            }
         }
 
         private void restaurerToolStripMenuItem_Click(object sender, EventArgs e)
