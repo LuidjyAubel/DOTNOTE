@@ -53,7 +53,6 @@
             this.collerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.couperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectionnéToutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ouvrirDansLexplorateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
@@ -239,16 +238,15 @@
             this.copierToolStripMenuItem,
             this.collerToolStripMenuItem,
             this.couperToolStripMenuItem,
-            this.selectionnéToutToolStripMenuItem,
-            this.ouvrirDansLexplorateurToolStripMenuItem});
+            this.selectionnéToutToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(241, 124);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(239, 128);
             // 
             // copierToolStripMenuItem
             // 
             this.copierToolStripMenuItem.Name = "copierToolStripMenuItem";
             this.copierToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copierToolStripMenuItem.Size = new System.Drawing.Size(240, 24);
+            this.copierToolStripMenuItem.Size = new System.Drawing.Size(238, 24);
             this.copierToolStripMenuItem.Text = "Copier";
             this.copierToolStripMenuItem.Click += new System.EventHandler(this.copierToolStripMenuItem_Click);
             // 
@@ -256,7 +254,7 @@
             // 
             this.collerToolStripMenuItem.Name = "collerToolStripMenuItem";
             this.collerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.collerToolStripMenuItem.Size = new System.Drawing.Size(240, 24);
+            this.collerToolStripMenuItem.Size = new System.Drawing.Size(238, 24);
             this.collerToolStripMenuItem.Text = "Coller";
             this.collerToolStripMenuItem.Click += new System.EventHandler(this.collerToolStripMenuItem_Click);
             // 
@@ -264,7 +262,7 @@
             // 
             this.couperToolStripMenuItem.Name = "couperToolStripMenuItem";
             this.couperToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.couperToolStripMenuItem.Size = new System.Drawing.Size(240, 24);
+            this.couperToolStripMenuItem.Size = new System.Drawing.Size(238, 24);
             this.couperToolStripMenuItem.Text = "Couper";
             this.couperToolStripMenuItem.Click += new System.EventHandler(this.couperToolStripMenuItem_Click);
             // 
@@ -272,16 +270,9 @@
             // 
             this.selectionnéToutToolStripMenuItem.Name = "selectionnéToutToolStripMenuItem";
             this.selectionnéToutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.selectionnéToutToolStripMenuItem.Size = new System.Drawing.Size(240, 24);
+            this.selectionnéToutToolStripMenuItem.Size = new System.Drawing.Size(238, 24);
             this.selectionnéToutToolStripMenuItem.Text = "Selectionné tout";
             this.selectionnéToutToolStripMenuItem.Click += new System.EventHandler(this.selectionnéToutToolStripMenuItem_Click);
-            // 
-            // ouvrirDansLexplorateurToolStripMenuItem
-            // 
-            this.ouvrirDansLexplorateurToolStripMenuItem.Name = "ouvrirDansLexplorateurToolStripMenuItem";
-            this.ouvrirDansLexplorateurToolStripMenuItem.Size = new System.Drawing.Size(240, 24);
-            this.ouvrirDansLexplorateurToolStripMenuItem.Text = "Ouvrir dans l\'explorateur";
-            this.ouvrirDansLexplorateurToolStripMenuItem.Click += new System.EventHandler(this.ouvrirDansLexplorateurToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -345,7 +336,6 @@
         private System.Windows.Forms.ToolStripMenuItem copierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem collerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem couperToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ouvrirDansLexplorateurToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectionnéToutToolStripMenuItem;
     }
 }
