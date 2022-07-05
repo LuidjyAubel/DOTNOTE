@@ -129,7 +129,16 @@ namespace NOTEPAD
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-                this.Close();
+            const string message ="Ete vous sur de vouloir fermer l'application?";
+            const string caption = "Comfirmation";
+            var result = MessageBox.Show(message, caption,
+                                         MessageBoxButtons.YesNo,
+                                         MessageBoxIcon.Question);
+
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
 
         private void restaurerToolStripMenuItem_Click(object sender, EventArgs e)
